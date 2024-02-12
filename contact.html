@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional way</title>
+</head>
+<body>
+    <h1> Make up schedule</h1>
+    <form onreset="myFunctions()" action = "send.html">
+        <table>
+          <thead>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>3:00-4:00</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+            </tr>
+            <tr>
+                <td>4:00-5:00</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+            </tr>
+            <tr>
+                <td>5:00-6:00</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+            </tr>
+            <tr>
+                <td>6:00-7:00</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+            </tr>
+            <tr>
+                <td>7:00-8:00</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td><input type="checkbox"></button></td>
+            </tr>
+            <tr>
+                <td>8:00-9:00</td>
+                <td>BLOCK</td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+                <td>BLOCK</td>
+                <td><input type="checkbox"></button></td>
+            </tr>
+          </tbody>
+
+        </table>
+        <input type="reset">
+        </form>
+    <h4>*click available open spot to schedule a make up lesson</h4>
+
+    <h2>Schedule for a make up lesson</h2>
+
+    <form>
+      <fieldset>
+        <legend>Name</legend>
+        <p><label for="firstlast" class="required">First and Last Name</label>
+          <input type="text" name="firstlast" id="firstlast" size="30" required placeholder="First and Last Name" autofocus />
+      </p>
+      <p>
+        <label for="phone" class="required">Phone number</label>        
+            <input type="text" name="phone" id="phone" size="30" required placeholder="xxx-xxx-xxxx" />      
+        </p>
+      <p>
+      <label for="email" class="required">Email</label>
+          <input type="email" name="email" id="email" size="30" required pattern="[^ @]+@[^ @]+.[a-z]+" placeholder="name@host.com" />
+      </p>
+
+      <p><label for="Comment">Comment</label>
+          <textarea name="Comment" id="Comment" minlenth="3" maxlenth="500" required placeholder="Write 500 characters or less." ></textarea>    
+      </p>    
+      </fieldset>
+    </form>
+    <a href="send.html">
+      <button style="font-size:25px; background-color: grey; color: rgb(13, 13, 16); border-radius: 25px;">Submit </button>
+    </a>
+</body>
+</html>

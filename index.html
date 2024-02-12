@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Make up schedule</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+  <body>
+    <h1> Make up schedule</h1>
+    <form onreset="myFunctions()" action = "send.html">
+    <table>
+      <thead>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>3:00-4:00</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+        </tr>
+        <tr>
+            <td>4:00-5:00</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+        </tr>
+        <tr>
+            <td>5:00-6:00</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+        </tr>
+        <tr>
+            <td>6:00-7:00</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+        </tr>
+        <tr>
+            <td>7:00-8:00</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td><input type="checkbox"></button></td>
+        </tr>
+        <tr>
+            <td>8:00-9:00</td>
+            <td>BLOCK</td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+            <td>BLOCK</td>
+            <td><input type="checkbox"></button></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <input type="reset">
+    </form>
+    <h4>*click available open spot to schedule a make up lesson</h4>
+
+    <h2>Prefer traditional way of scheduling?</h2>
+    <a href="contact.html">
+      <button style="font-size:18px; background-color: grey; color: rgb(13, 13, 16); border-radius: 25px;">click </button>
+    </a>
+    <h4>click to send email to the instructor directly for scheduling that works with your schedule</h4>
+    <form>
+      <fieldset>
+
+      <p><label for="Comment">Add Comment</label>
+          <textarea name="Comment" id="Comment" minlenth="3" maxlenth="500" placeholder="Write 500 characters or less." ></textarea>    
+      </p>    
+      </fieldset>
+      <fieldset>
+        <div class="dropdown">
+          <button id="myBtn" class="dropbtn">FAQ</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="FAQ.html">What is make up Policy?</a>
+            <a href="FAQ.html">What is No-Show Policy?</a>
+            <a href="FAQ.html">Can I ask for a refund?</a>
+          </div>
+        </div>
+        <script>
+          // Get the button, and when the user clicks on it, execute myFunction
+          document.getElementById("myBtn").onclick = function() {myFunction()};
+
+          /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+        </script>
+      </fieldset>  
+
+    </form>
+
+    <a href="send.html">
+      <button style="font-size:25px; background-color: grey; color: rgb(13, 13, 16); border-radius: 25px;">Submit </button>
+    </a>
+    <script>
+      function myFunctions() {
+          alert("The form was reset");
+          }
+    </script>
+
+  </body>
+</html>
